@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pega Case Embed</title>
+</head>
+<body>
+  <!-- Include the Pega Embed script -->
+  <script 
+    src="https://fusionaix01.pegalabs.io/prweb/PRRestService/c11nsvc/v1/pega-embed.js">
+  </script>
+
+  <!-- Embed the Pega Case (createCase action) -->
+  <pega-embed
+    id="theEmbed"
+    action="createCase"
+    caseTypeID="ORNRBD-CreditIs-Work-CreditIssuance"
+    themeID="pzEquuleus"
+    casePage="assignment"
+    appAlias="credit-issuance-workflow"
+    pegaServerUrl="https://fusionaix01.pegalabs.io/prweb/"
+    autoReauth="true"
+    authService="pega"
+    clientId="99822428680423799938"
+    style="width:100%; height:100vh;">
+  </pega-embed>
+
+</body>
+</html>
